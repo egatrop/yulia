@@ -15,7 +15,15 @@
     }
 
     .row {
-      display: table-row;
+      width: auto;
+      clear: both;
+    }
+
+    .header {
+      float: left;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 12px;
     }
 
     .cell {
@@ -23,8 +31,8 @@
       border: 1px solid #ccc;
       text-align: center;
       vertical-align: middle;
-      height: 50px;
-      width: 50px;
+      height: 60px;
+      width: 60px;
     }
 
     .hide {
@@ -34,28 +42,18 @@
     .cell:hover .hide {
       display: block;
     }
-
-    /* @media only screen and (max-width: 600px) {
-      .table {
-        display: block;
-      }
-
-      .row {
-        display: flex;
-      }
-
-      .cell {
-        display: block;
-        flex-basis: 100%;
-      }
-    } */
   </style>
 </head>
 
 <body>
 
-  <div class="table">
 
+  <div class="table">
+    <div class="row">
+      <div class="header">
+        Press a cell to uncover:
+      </div>
+    </div>
     <div class="row">
       <div class="cell">
         <div class="hide">
